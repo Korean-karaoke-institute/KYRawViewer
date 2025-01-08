@@ -1,0 +1,19 @@
+﻿<Window x:Name="mainWindow1" x:Class="kyRawViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kyRawViewer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid >
+
+        <Image x:Name="BackgroundImage" Stretch="Fill" Margin="10,10,235,10" Source="/Resources/trans.jpg" AllowDrop="True" Drop="MyImage_Drop" PreviewDragOver="MyImage_PreviewDragOver"/>
+
+        <Border BorderThickness="2" BorderBrush="#FF000000" Margin="10,10,235,10" >
+            <Image x:Name="MyImage" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AllowDrop="True" Drop="MyImage_Drop" PreviewDragOver="MyImage_PreviewDragOver"/>
+        </Border>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="621,21,0,0" VerticalAlignment="Top" Width="152"/>
+
+    </Grid>
+</Window>
